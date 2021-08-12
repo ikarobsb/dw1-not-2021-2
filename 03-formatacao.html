@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomratação de Textos ⌨️</title>
+   
+   <style>
+        body
+        {background-color: rgb(104, 104, 170);}
+        /*Deixei justificado, pois acho mais estético*/
+        H1 
+        {
+           text-align:center;
+           /* alinhamento do texto*/
+           color:midnightblue;
+            /* cor do título*/
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+            /* fonte do título*/
+        }
+        
+        p 
+        {
+            font-family:Arial, Helvetica, sans-serif;
+            /* fonte do texto*/
+            text-align:justify;
+            /* alinhamento do texto*/
+            color:rgb(65, 55, 55);
+            /* cor do texto*/
+        }
+
+        p.direita 
+        {
+            /* <p class="direita">*/
+            text-align: right;
+        }
+
+        p.azul
+        {color:rgb(3, 15, 49);}
+
+        p.brega
+        {font-size: xx-large;
+         font-weight: 900;
+         color:rgb(228, 29, 112);
+         background-color: blueviolet;   
+        }
+
+        address
+        {color:chocolate}
+
+        mark 
+        {
+            background-color: rgb(21, 247, 1);
+            /*muda o fundo do marca-texto*/
+        }
+        
+        blockquote
+        {
+            font-family:'Courier New', Courier, arial;
+            color:red;
+        }
+    
+        code
+        {color:darkred;}
+
+        del
+        {
+        font-size:x-large;
+        color:royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Formatação de textos</h1>
+    
+    <p class="direita"><strong>Baseado em fatos reais</strong>.</p>
+
+    <!--
+        Negrito: <b></b>
+        Itálico: <i></i>
+        Sublinhado: <u></u>
+        
+        Semântica é significado: as tags B e I deixam o texto visualmente em negrito ou itálico. Para o robô do Google as tags B e I não significam nada, ou seja, destaca-se o texto visuamente, mas não destaca nos mecanismos de busca.
+        Surgiram duas formas para fazer negrito e itálico que são semânticos (relevantes para o Google).
+
+        Tags semânticas:
+
+        Negrito: <strong>
+        Itálico: <em>
+    -->
+    <p>Orkutilson era um adolescente comum. Estudava em uma <b>escola estadual</b> e sua matéria preferida era <i>matemática</i>.</p>
+
+    <p>Orkutilson era um adolescente comum. Estudava em uma <strong>escola estadual</strong> e sua matéria preferida era <em>matemática.</em></p> 
+
+    <!--
+        <mark>Destaca o fundo em amarelo.</mark>
+        <del> tachado </del>
+        <ins> sublinhado/texto reinserido </ins> a tag <u> é obsoleta.
+        <sub> subescrito
+        <sup> superscript
+    -->
+
+    <p>Ele também gostava de usar caneta marca texto para <mark>destacar os trechos mais importantes.</mark> No entanto, sua professora achava Orkutilson <del>meio lerdo</del> <ins>não muito inteligente.</ins> Já que sempre tinha dificuldades na prova.</p>
+    
+    <p>Orkutilson também gostava de fórmulas. Suas preferidas eram H<sub>2</sub>O e E = MC<sup>2</sup>. Sua frase favorita era <quote>"Penso, logo Existo" (Descartes)</quote></p>
+    
+    <p class="brega">Seu trecho de música favorito era:
+    <blockquote>
+        Enquanto o som do paredão toca<br>
+        Cê gasta o seu batom de cereja<br>
+        Eu bebo, cê beija<br>
+        Eu bebo, cê beija<br> 
+        (Israel e Rodolffo, <em>Batom de Cereja</em>)
+    </blockquote>
+    </p>
+
+    <!--
+    <abbr> abreviações 
+    <code> identifica códigos de programação e aparecem em uma fonte diferente.
+    &lt; = <
+    &gt; = <
+    Códigos que começam com & e terminam com ; são chamados HTML ENTITIES
+    -->
+
+    <p class="azul">Nas horas vagas, Orkutilson era um mebro ativo da <abbr title="Associação dos Moradores do Bairro do Limão">ASMOBALI</abbr> e estudava <abbr title="Hipertext Markup Language">HTML</abbr></p>
+
+    <p>Suas <em>tags</em> favoritas eram <code>"&lt;mark&gt;"</code> e <code>&lt;blockquote&gt;</code></p>
+    
+    <p>Entre em contato com Orkutilson:
+    <address>
+        Rua do Sobe e desce, Bairro do Limão<br>
+        Telefone: (16) 99999-9999<br>
+        e-mail: orkutilson@gmail.com
+    </address>
+    <!--Informa ao Google que é endereço-->
+    </p> 
+
+    <p class="direita"><em>(Autor Desconhecido)</em></p>
+
+
+    </body>
+</html> 
