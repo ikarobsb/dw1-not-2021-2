@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Links</title>
+    <!--Link para o arquivo CSS externo 09.css - não serve para o usuário clicar-->
+    <link rel="stylesheet" href="09.css">
 </head>
 <body>
     <!--
@@ -31,5 +33,87 @@
 
         UM LINK DE INTERNET É TECNICAMENTE CHAMADO DE URL (UNIVERSAL RESOURCE LOCATOR - localizador universal de recursos).
     -->
+    
+    <!--
+    Existem dois tipos de elemento no HTML:
+    1) Elementos de linha (inline): quando colocados em sequência, ocupam a mesma linha, se houver espaço. Exemplo: <a> e <img>
+    
+    2) Elementos de bloco (block): quando colocados em sequência, ficam um debaixo do outro. Exemplo: <p> e <div>. Ocupam 100% da largura.
+    -->
+    
+    <!--
+        <a>: Representa uma ligação (link) para outro contúdo no mesmo site ou em outro site. <a> vem do ingês "anchor" de âncora.
+        Atributos:
+        - href: especifica a URL destino do link (Significa hiperreferência).
+        - target: quando seu valor é "_blank", o link de destino será carregad em uma outra aba do navegador. O target="_blank" é normalmente utilizado para links externos.
+        - rel (ATRIBUTO SEMÂNTICO): especifica o RELacionamento entre a página atual e a página/conteúdo linkado. Valores possíveis: 
+            - external: identifica um link externo;
+            - dofollow: quando o link aponta para um site de alta reputação ou que o autor recomenda (endossa);
+            - nofollow: quando o link aponta para um contúdo de baixa reputação, patrocinado ou que o autor não recomenda;
+            - prev: link para a página anterior de um mesmo site. 
+            - next: link para a página seguinte de um mesmo site.
+            - author: identifica o link para o site pessoal ou o e-mail do autor da página.  
+    -->
+    
+    <!--Link externo - link para outro site. Precisa ser a URL completa começando por HTTP:// ou HTTPS://-->
+    <p>
+        Acesse agora o <a href="https://fatecfranca.edu.br" rel="external dofollow">site da Fatec Franca</a> e fique sabendo das novidades dos cursos.
+    </p>
+
+    <!--Link interno: link para outra página do mesmo site. Pode conter apenas a parte da rota ou caminho da URL, sem o domínio e sem o protocolo-->
+    <p>
+        <a href="07-imagens.html">Formatos de Imagem</a>
+    </p>
+
+    <!--
+        LINK DE IMAGEM: o texto entre as tags de abertura e fechamento é substituído por um elemento <img>
+    -->
+    <div>
+        <a href="08-imagens2.html"><img SRC="img/apptiva-icon.png" alt="Site da Apptiva"></a>
+    </div>
+
+    <div>
+        <ul type="square">
+            <li>
+                <a href="http://github.com" target="_blank" rel="external dofollow">Github</a>
+            </li>
+            <li>
+                <a href="http://pudim.com.br" target="_blank" rel="external nofollow">Pudim</a>
+            </li>    
+        </ul>
+        <!-- Target="_blank" Não funciona no live server-->
+
+    </div>
+
+    <p>
+        <a href="08-imagens2.html" rel="prev">&larr; Página anterior</a>
+    </p>
+
+    <p>
+        <a href="10-imagens-dinamicas.html"rel="next"> Página seguinte &rarr;</a>
+    </p>
+
+    <!--Para forçar um download, podemos usar o atributo download-->
+    <p>
+        <a href="img/metal.jpg" download>Faça o download da imagem</a>
+    </p>
+
+    <p>
+        <!--O atributo download pode receber um valor que será o nome que o arquivo terá quando for baixado-->
+        Aprenda mais sobre links com a <a href="arquivos/10-apostila-links.pdf" download="Apostila de inks do Pro. Gustavo Guanabara.pdf">Apostila do Prof. Gustavo Guanabara.</a>
+    </p>
+
+    <p>
+        <!--O atributo download não funciona para forçar o download de arquivos externos (hotlink)-->
+        Confira o <a href="https://site.fatecfranca.edu.br/files/horario-aulas-dsm-not-2021-2.pdf" download="Horário DSM">horário de aulas</a> do curso de DSM.
+    </p>
+
+    <p>&copy; 2021 <a href="htps://faustocintra.com.br" target="_blank" rel="external dofollow author">Prof. Fausto Cintra</a>. Contato: <a href="mailto:professor@faustocintra.com.br" rel="author">professor@faustocintra.com.br</a>
+    </p>
+
+  
+
+
+
 </body>
 </html>

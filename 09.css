@@ -1,0 +1,15 @@
+a {
+    color:orangered; /*altera a cor do link*/
+    text-decoration: none; /*tira o subinhado do link*/
+}
+
+/*Regra para os links que já foram visitados*/
+a:visited {
+    color: orange;
+}
+
+/*Regra para quando o mouse passa sobre o link*/
+a:hover {
+    color:rgb(32, 31, 31);
+    text-decoration: underline; /*retorna o sublinhadoo*/
+}
