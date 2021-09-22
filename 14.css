@@ -1,0 +1,86 @@
+        /*
+        UNIDADES DE MEDIDAS:
+
+        1) Unidades absolutas: 
+            - px (pixel): corresponte a um ponto de iluminação na tela, ou no papel, equivale a 1/96 de uma polegada (2,54cm). Seu tamanho depende da resolução da tela.
+            - pt (point): normalmente utilizados para especificar o tamanho de fonte (1/72 de uma polegada);
+            - mm (milímetros): para impressão;
+            - cm (centimetros): para impressão;
+            - in (inches, polegatas): para impressão;
+        
+        2) Unidades relativas:
+            - %: calculado em relação ao elemento pai;
+            - em: usada para fontes. Siginifica 100% do tamanho da fonte do pai
+            - rem: usada para fontes e se relaciona com o elemento raiz (do que foi definido no elemento HTML)
+            - vw: cada vw é 1% da largura da janela.
+            - vh: cada vw corresponde a 1% da altura da janela.
+        */
+        html {
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        body {
+            background-color: gray;
+        }
+
+        #box1 {
+            background-color:lightgray;
+            text-align: center;
+            border: 4px solid lightslategrey;
+            width: 200px; /*largura*/
+            height: 200px; /*altura*/
+            font-size: 25pt;
+            font-family: fantasy;
+            
+        }
+
+        #box2 {
+            background-color: yellowgreen;
+            border: 4px dotted orange;
+            width: 6cm;
+            height: 20mm;
+            font-size: 0.8rem;
+        }
+
+        #pai1 {
+            background-color: olivedrab;
+            border: 4px dashed greenyellow;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            font-size: 30pt;
+        }
+
+        #filho1 {
+            background-color: burlywood;
+            border: 3px solid yellow;
+            width: 50%; /*Relativa ao elemento pai*/
+            height: 40%; /*Relativa ao elemento pai*/
+            font-size: 0.3em; /*50% do tamanho da fonte do pai*/
+        }
+
+        #filho2 {
+            background-color: brown;
+            border: 2px solid darkgreen;
+            border-radius: 30px;
+            width: 50vw; /*vw: cada vw é 1% da largura da janela.*/
+            height: 20%;
+            font-size: 35%;
+        }
+
+        #box3 {
+            background-color: darkorange;
+            border: 5px dotted burlywood;
+            border-radius: 15px;
+            height: 15vh;/*vh: cada vw corresponde a 1% da altura da janela.*/      
+        }
+
+        #p1 {
+            background-color: deeppink;
+            border: 5px solid darkslategray;
+            font-size: 1.5rem;/*150% do tamanho da fonte do elemento raiz - do elemento html*/
+            border-radius: 40px;
+            text-align: center;
+        }
+

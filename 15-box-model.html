@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*
+            CSS reset
+        */
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*--------------------------*/
+
+        body {
+            border: 8px solid red;
+            margin: 2px;
+            padding: 10px;
+        }
+        
+        #box1 {
+            border: 2px solid blue;
+            background-color: lightblue;
+            text-align: center;
+            margin: 100px;
+            padding: 15px;
+            
+        }
+        /*
+        Padding: o espaço que existe entre o texto e a borda é chamado de padding, ou seja, é seu espaçamento interno.
+        - Margin: é o espaço externo.*/
+
+        #box2 {
+            box-sizing: border-box; /*inclui a borda e padding no tamanho do elemento*/
+            border: 20px solid green;
+            height: 80px;
+            width: 300px;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">
+        Conteúdo
+    </div>
+    <hr>
+    <div id="box2">Conteúdo</div>
+</body>
+</html>
