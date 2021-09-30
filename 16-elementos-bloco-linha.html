@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Bloco</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: justify;
+        }
+        
+        .borda {
+            border: 3px dotted red;
+            padding: 5px;
+            margin: 10px;
+            background-color: lemonchiffon;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        .em-linha {
+            display: inline; /*faz um elemento de bloco se comportar como elemento de linha*/
+        }
+
+        .em-bloco {
+            display: block; /*faz com que um elemento de linha se comporte como bloco.*/
+            border: 2px dashed purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos de Bloco e de Linha</h1>
+    
+    <h2>Elementos de bloco</h2>
+
+    <p>Sempre ocupam toda a largura do elemento pai. Quando colocados em sequência ficam um embaixo do outro. Exemplo:</p>
+
+    <p  class="borda">p</p>
+
+    <div  class="borda">div</div>
+
+    <h1 class="borda">h1</h1>
+
+    <h2  class="borda">h2</h2>
+
+    <blockquote  class="borda">blockquote</blockquote>
+
+    <ol  class="borda">
+        <li>ol</li>
+    </ol>
+
+    <ul  class="borda">
+        <li>ul</li>
+    </ul>
+
+    <h2>Elementos de llinha</h2>
+
+    <p>Ocupam apenas a largura necessária para o seu conteúdo e ficam lado a lado, caso haja largura disponível. Exemplos:</p>
+
+    <div style="text-align: center;"><!--Para centralizar os elementos de linha no centro horizontal da página-->
+        <a href="#"  class="borda">a</a>
+        <img  class="borda" src="#" alt="img">
+        <spam  class="borda">spam</spam>
+        <em  class="borda">em</em>
+        <strong  class="borda">strong</strong>
+        <code  class="borda">code</code>
+        <abbr  title="abbr" class="borda">abbr</abbr>
+    </div>
+    <!--
+        Elementos de linha:
+
+        <a> <abbr> <acronym> <b> <bdo> <br>
+        <button> <cite> <code> <dfn> <em> <i>
+        <img> <input> <kbd> <label> <map> <object>
+        <output> <q> <samp> <script> <select> <small>
+        <span> <strong> <sub> <textarea> <tt> <var>
+    -->
+
+    <h2>Mudando o comportamento</h2>
+
+    <p>Um elemento de bloco pode comportar-se como um elemento de linha inserindo-se no CSS o display; inline;</p>
+
+    <div style="text-align: center">
+        <div class="borda em-linha">div em linha</div>
+        <p class="borda em-linha">p em linha</p><!--posso aplicar duas classes ao mesmo tempo separando os por espaço-->
+    </div>
+
+    <p>Da mesma forma, um elemento em linha pode se comportar como um elemento de bloco inserindo-se no CSS o display: block;</p>
+
+    <a href="#" class="borda em-bloco">a em bloco</a> 
+    <img  class="borda em-bloco" src="#" alt="img em bloco">
+
+</body>
+</html>

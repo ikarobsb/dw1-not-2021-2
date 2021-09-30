@@ -1,0 +1,95 @@
+        /*
+            CSS reset
+        */
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*--------------------------*/
+
+        body {
+            border: 8px solid rgb(81, 138, 170);
+            margin: 2px;
+            padding: 10px;
+        }
+        
+        h1 {
+            text-shadow: -5px -5px 10px gray;/*ver comentários de box-shadow*/
+            text-align: center;
+        }
+        
+        #box1 {
+            border: 2px solid blue;
+            background-color: lightblue;
+            text-align: center;
+            margin: 100px;
+            padding: 15px;
+            box-shadow: 10px 10px 10px gray;/*sombra em um elemento
+            1) Diferença da sombra em relação ao elemento na horizontal;
+            2) Deslocamento vertical em relação ao elemento;
+            */
+                        
+        }
+        /*
+        Padding: o espaço que existe entre o texto e a borda é chamado de padding, ou seja, é seu espaçamento INTERNO.
+        - Margin: é o espaço EXTERNO.*/
+
+        #box2 {
+            box-sizing: border-box; /*inclui a borda e padding no tamanho do elemento, pois naturalmente eles não são computados*/
+            border: 20px solid green;
+            height: 300px;
+            width: 500px;
+            padding: 0;
+        }
+
+        #box3 {
+            background-color: purple;
+            color: white;
+            border-top: 7px solid orange;
+            border-bottom: 7px dashed burlywood; /*posso definir separadamente as bordas*/
+            border-right: 7px ridge lightpink;
+            border-left: 7px ridge darkslategrey;
+            border-radius: 20px;
+            /*padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;*/
+            padding: 20px 12px 50px 20px; /*a regra é top, right, bottom e left - ponteiros do relógio (12,3, 6 e 9 horas*/
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        #box4 {
+            height: 150px;
+            width: 150px;
+            border: 9px solid orangered;
+            border-radius: 50%; /*colocando em 50% gera-se um círculo*/
+            display: flex;/*possibilita o flex box*/
+            align-items: center; /*centraliza vertical*/
+            justify-content: center;/*centraliza horizontal*/
+        }
+
+        #imagem {
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+                    
+        }
+
+        figure {
+            text-align: center;
+            
+        }
+
+        #box5 {
+            text-align: justify;
+            background-color: oldlace;
+            border: 2px solid sienna;
+            padding: 30px 50px; /*primeira medida (top e bottom) e segunda medida (rigth e left)*/
+            margin: 40px 20px;
+            outline: 6px dotted pink;/*Contorno da borda, muito raro*/ 
+            }
